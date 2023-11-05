@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactame</title>
+</head>
+<body>
+  <h1>Deja tus datos y te contacto en seguida!</h1>
+  <hr />
+  <section>
+    <h2>Formulario de contacto</h2>
+    <form method="post" action="/">
+      <fieldset>
+        <legend>Información Personal</legend>
+        <div>
+          <label>Nombre:
+            <input
+              type="text"
+              name="name"
+              placeholder="Manuel Espinoza"
+            >
+          </label>
+        </div>
+        <div>
+          <label>Email:
+            <input
+              type="email"
+              name="name"
+              placeholder="nombre@dominio.com"
+            >
+          </label>
+        </div>
+        <div>
+          <label>Teléfono:
+            <input
+              type="tel"
+              nsme="phone"
+              placeholder=""
+              required pattern="[0-9]{9}"
+            >
+          </label>
+        </div>
+        <div>
+          <label for="why">¿Por qué quieres contactar?</label>
+          <select name="why" id="why">
+            <option value="1">Trabajo</option>
+            <option value="2">Duda</option>
+            <option value="3">Más Información</option>
+          </select>
+        </div>
+        <div>
+          <textarea 
+            name="text" 
+            id="comentarios" 
+            placeholder="Indicame los motivos de contacto en esta área"
+            cols="50" 
+            rows="10">
+          </textarea>
+        </div>
+      </fieldset>
+      <button>Enviar</button>
+    </form>
+  </section>
+</body>
+</html>
